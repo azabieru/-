@@ -1,0 +1,169 @@
+@charset "UTF-8";
+html{
+  font-size: 62.5%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+
+.loginBg{
+
+  background-color: #ffc0cb;
+}
+.Picture{
+  width: auto;
+
+  ('images.png');
+}
+.loginBox{
+  margin: 10% auto;
+  width: 360px;
+}
+/*.loginBoxInner{
+  padding: 40px 20px;
+  width: 360px;
+  text-align: center;
+  background-color: #dbebc4;
+  box-sizing: border-box;
+}
+*/
+
+input{
+  outline: 0;
+}
+.loginText{
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 320px;
+  box-sizing: border-box;
+}
+.loginButton{
+  padding: 0;
+  width: 120px;
+  line-height: 3em;
+  background-color: #eeeeee;
+}
+/*html, body {
+  height: 100%;
+}
+
+html {
+  background: #eee;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  background: lighten(#f0f4c3, 10%);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave {
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #0af;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: .1;
+  background: yellow;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+}
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+/* ---------- index.php（登録一覧） ---------- */
+
+.registerList{
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  margin: 0 auto;
+  padding: 15px 0 15px 20px;
+  width: 1000px;
+  list-style-type: none;
+  border-bottom: dotted 1px #cccccc;
+  box-sizing: border-box;
+  display: flex;
+}
+ul li .bookId{
+  width: 50px;
+}
+ul li .bookTitle{
+  width: 750px;
+}
+ul li .bookOperation{
+  width: 200px;
+}
+ul li .bookOperation .listButton{
+  padding: 0;
+  width: 50px;
+  line-height: 2em;
+  background-color: #eeeeee;
+}
